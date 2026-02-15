@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="רכישת פירות מרוכזת — Premium fresh strawberries & fruits in Beit Shemesh, Rama A. All Kosher. Order via WhatsApp.">
+    <meta name="keywords"
+        content="strawberries, fresh fruit, Beit Shemesh, Rama A, kosher, רכישת פירות מרוכזת, fruit delivery">
+    <title>רכישת פירות מרוכזת | Fresh Berries — Beit Shemesh</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍓</text></svg>">
+</head>
+
+<body>
+
+    <!-- ======================== NAVBAR ======================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">🍓</span>
+                <span class="logo-text" data-i18n="brand">רכישת פירות מרוכזת</span>
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher" id="langSwitcher">
+                <button class="lang-current" id="langToggle" aria-label="Switch language">
+                    <span class="lang-flag" id="langFlag">🇬🇧</span>
+                    <span class="lang-code" id="langCode">EN</span>
+                    <svg class="lang-arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 5l3 3 3-3" />
+                    </svg>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-option" data-lang="en">
+                        <span class="lang-flag">🇬🇧</span>
+                        <span>English</span>
+                    </button>
+                    <button class="lang-option" data-lang="he">
+                        <span class="lang-flag">🇮🇱</span>
+                        <span>עברית</span>
+                    </button>
+                    <button class="lang-option" data-lang="ru">
+                        <span class="lang-flag">🇷🇺</span>
+                        <span>Русский</span>
+                    </button>
+                </div>
+            </div>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" data-i18n="nav_story">Our Story</a></li>
+                <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="#features" data-i18n="nav_why">Why Us</a></li>
+                <li><a href="#location" data-i18n="nav_location">Location</a></li>
+                <li><a href="#contact" class="nav-cta" data-i18n="nav_order">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ======================== HERO ======================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=1920&q=90&auto=format"
+                alt="Fresh strawberries with water drops" class="hero-img" loading="eager">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                <span data-i18n="hero_badge">Fresh from the farm • All Kosher ✓</span>
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                <span class="title-line title-brand" data-i18n="hero_brand">רכישת פירות מרוכזת</span>
+                <span class="title-line title-accent" data-i18n="hero_title">Premium Fruits</span>
+                <span class="title-line title-sub" data-i18n="hero_subtitle">& Fresh Berries</span>
+            </h1>
+            <p class="hero-description animate-on-scroll" data-i18n="hero_desc">
+                Hand-picked, sun-ripened berries and premium fruits — all Kosher certified.
+                Available every Friday in Beit Shemesh. Join our WhatsApp group for weekly sale times.
+            </p>
+            <div class="hero-cta animate-on-scroll">
+                <a href="https://chat.whatsapp.com/FOcADFRxWOJLi4wLbsE0I0" target="_blank" rel="noopener"
+                    class="btn btn-primary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    <span data-i18n="hero_cta_wa">Order on WhatsApp</span>
+                </a>
+                <a href="#gallery" class="btn btn-secondary">
+                    <span data-i18n="hero_cta_explore">Explore</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="stat">
+                    <span class="stat-number" data-target="5000">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label" data-i18n="stat_customers">Happy Customers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-icon">✡️</span>
+                    <span class="stat-label" data-i18n="stat_kosher">100% Kosher</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-icon">📅</span>
+                    <span class="stat-label" data-i18n="stat_friday">Every Friday</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span data-i18n="scroll">Scroll</span>
+        </div>
+    </section>
+
+    <!-- ======================== ABOUT ======================== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image animate-on-scroll">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1587393855524-087f83d95bc9?w=800&q=85&auto=format"
+                            alt="Fresh strawberries being washed with water" loading="lazy">
+                        <div class="image-accent"></div>
+                    </div>
+                    <div class="floating-card card-top">
+                        <span class="card-emoji">✡️</span>
+                        <span class="card-text" data-i18n="card_kosher">100% Kosher</span>
+                    </div>
+                    <div class="floating-card card-bottom">
+                        <span class="card-emoji">📅</span>
+                        <span class="card-text" data-i18n="card_friday">Every Friday</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag animate-on-scroll" data-i18n="about_tag">Our Story</span>
+                    <h2 class="section-title animate-on-scroll">
+                        <span data-i18n="about_title_1">Freshness You Can </span><span class="text-gradient"
+                            data-i18n="about_title_2">Taste</span>
+                    </h2>
+                    <p class="about-text animate-on-scroll" data-i18n="about_p1">
+                        רכישת פירות מרוכזת brings the finest, hand-selected strawberries and seasonal fruits straight
+                        from trusted farms
+                        to your table. Every berry is picked at peak ripeness, washed in crystal-clear water,
+                        and delivered with care to families across Beit Shemesh, Rama A.
+                    </p>
+                    <p class="about-text animate-on-scroll" data-i18n="about_p2">
+                        All our produce is 100% Kosher certified. We operate every Friday — join our WhatsApp group
+                        to get notified of exact sale times and weekly availability. Our community of happy customers
+                        keeps growing because we never compromise on quality.
+                    </p>
+                    <div class="about-highlights animate-on-scroll">
+                        <div class="highlight">
+                            <div class="highlight-icon">✡️</div>
+                            <div>
+                                <h4 data-i18n="hl_kosher_title">All Kosher Certified</h4>
+                                <p data-i18n="hl_kosher_desc">Every product meets strict kosher standards</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon">🚚</div>
+                            <div>
+                                <h4 data-i18n="hl_friday_title">Fresh Every Friday</h4>
+                                <p data-i18n="hl_friday_desc">Sale times posted on our WhatsApp group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== GALLERY ======================== -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll" data-i18n="gallery_tag">Gallery</span>
+                <h2 class="section-title animate-on-scroll">
+                    <span data-i18n="gallery_title_1">Nature's </span><span class="text-gradient"
+                        data-i18n="gallery_title_2">Finest</span>
+                </h2>
+                <p class="section-subtitle animate-on-scroll" data-i18n="gallery_sub">
+                    See the quality that sets us apart — fresh, vibrant, and bursting with flavor.
+                </p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-large animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1495570689269-d883b1de8223?w=900&q=85&auto=format"
+                        alt="Ripe strawberries close-up with water drops" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label" data-i18n="gal_strawberries">Premium Strawberries</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1502741224143-90386d7f8c82?w=600&q=85&auto=format"
+                        alt="Fresh mixed berries" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label" data-i18n="gal_mixed">Mixed Berries</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?w=600&q=85&auto=format"
+                        alt="Fresh blueberries with water drops" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label" data-i18n="gal_blueberries">Fresh Blueberries</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1425543103986-22abb7d7e8d2?w=600&q=85&auto=format"
+                        alt="Raspberries macro shot" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label" data-i18n="gal_raspberries">Red Raspberries</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=600&q=85&auto=format"
+                        alt="Strawberries water splash" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-label" data-i18n="gal_fresh">Water-Fresh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== FEATURES ======================== -->
+    <section class="features section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll" data-i18n="feat_tag">Why Choose Us</span>
+                <h2 class="section-title animate-on-scroll">
+                    <span data-i18n="feat_title_1">The </span><span class="text-gradient" data-i18n="feat_title_2">Fresh
+                        Berry</span><span data-i18n="feat_title_3"> Difference</span>
+                </h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">✡️</div>
+                    </div>
+                    <h3 data-i18n="f1_title">100% Kosher</h3>
+                    <p data-i18n="f1_desc">All our products are certified kosher. We maintain the highest standards of
+                        kashrut for our community.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">🌿</div>
+                    </div>
+                    <h3 data-i18n="f2_title">Farm Fresh</h3>
+                    <p data-i18n="f2_desc">Sourced directly from premium farms. No middlemen, no storage — just
+                        field-to-door freshness.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">📅</div>
+                    </div>
+                    <h3 data-i18n="f3_title">Every Friday</h3>
+                    <p data-i18n="f3_desc">We operate every Friday. Exact sale times are posted weekly on our WhatsApp
+                        group — join to stay updated!</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon-wrap">
+                        <div class="feature-icon">💎</div>
+                    </div>
+                    <h3 data-i18n="f4_title">Premium Quality</h3>
+                    <p data-i18n="f4_desc">Only the top 10% of each harvest makes it to your box. We never compromise on
+                        quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== PARALLAX DIVIDER ======================== -->
+    <section class="parallax-divider">
+        <img src="https://images.unsplash.com/photo-1543528176-61b239494933?w=1920&q=85&auto=format"
+            alt="Fruit and berries in water" loading="lazy" class="parallax-img">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content animate-on-scroll">
+            <h2 data-i18n="divider_title">Taste the Difference</h2>
+            <p data-i18n="divider_desc">Premium kosher berries, every Friday. Join thousands of happy customers.</p>
+            <a href="https://chat.whatsapp.com/FOcADFRxWOJLi4wLbsE0I0" target="_blank" rel="noopener"
+                class="btn btn-primary btn-glow">
+                <span data-i18n="divider_cta">Join Our WhatsApp Group</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ======================== LOCATION ======================== -->
+    <section class="location section" id="location">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-on-scroll" data-i18n="loc_tag">Find Us</span>
+                <h2 class="section-title animate-on-scroll">
+                    <span data-i18n="loc_title_1">Visit Us in </span><span class="text-gradient"
+                        data-i18n="loc_title_2">Beit Shemesh</span>
+                </h2>
+            </div>
+            <div class="location-grid">
+                <div class="location-info animate-on-scroll">
+                    <div class="location-card">
+                        <div class="location-item">
+                            <div class="location-icon">📍</div>
+                            <div>
+                                <h4 data-i18n="loc_address_label">Address</h4>
+                                <p data-i18n="loc_address">Beit Shemesh, Rama A<br>Near Yeshiva Lev HaTorah</p>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="location-icon">📞</div>
+                            <div>
+                                <h4 data-i18n="loc_phone_label">Phone</h4>
+                                <a href="tel:+972552649363" class="location-link">+972 55-264-9363</a>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="location-icon">💬</div>
+                            <div>
+                                <h4 data-i18n="loc_wa_label">WhatsApp Group</h4>
+                                <a href="https://chat.whatsapp.com/FOcADFRxWOJLi4wLbsE0I0" target="_blank"
+                                    rel="noopener" class="location-link" data-i18n="loc_wa_link">Join our community</a>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="location-icon">🕐</div>
+                            <div>
+                                <h4 data-i18n="loc_hours_label">Hours</h4>
+                                <p data-i18n="loc_hours">Every Friday<br>Exact sale time posted on WhatsApp group</p>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <div class="location-icon">✡️</div>
+                            <div>
+                                <h4 data-i18n="loc_kosher_label">Kashrut</h4>
+                                <p data-i18n="loc_kosher">All products are 100% Kosher certified</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map animate-on-scroll">
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13520.93!2d34.9876!3d31.7461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7b3f0e1e8e7%3A0x724fa20256dd1db6!2sBeit%20Shemesh!5e0!3m2!1sen!2sil!4v1700000000000!5m2!1sen!2sil"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Our Location — Beit Shemesh, Rama A">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== CONTACT CTA ======================== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-card animate-on-scroll">
+                <div class="contact-glow"></div>
+                <span class="section-tag" data-i18n="cta_tag">Ready to Order?</span>
+                <h2 class="section-title">
+                    <span data-i18n="cta_title_1">Get Your </span><span class="text-gradient"
+                        data-i18n="cta_title_2">Fresh Fruits</span><span data-i18n="cta_title_3"> This Friday</span>
+                </h2>
+                <p class="contact-text" data-i18n="cta_desc">
+                    Join our WhatsApp group to see Friday's availability, prices, and exact sale time. All products are
+                    Kosher certified.
+                </p>
+                <div class="contact-buttons">
+                    <a href="https://chat.whatsapp.com/FOcADFRxWOJLi4wLbsE0I0" target="_blank" rel="noopener"
+                        class="btn btn-primary btn-large">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        <span data-i18n="cta_btn_wa">Join WhatsApp Group</span>
+                    </a>
+                    <a href="tel:+972552649363" class="btn btn-secondary btn-large">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                        </svg>
+                        <span data-i18n="cta_btn_call">Call Us: +972 55-264-9363</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🍓</span>
+                    <span class="logo-text" data-i18n="brand">רכישת פירות מרוכזת</span>
+                    <p class="footer-tagline" data-i18n="footer_tagline">Premium kosher fruits in Beit Shemesh, Rama A •
+                        Every Friday</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about" data-i18n="nav_story">Our Story</a>
+                    <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+                    <a href="#features" data-i18n="nav_why">Why Us</a>
+                    <a href="#location" data-i18n="nav_location">Location</a>
+                    <a href="#contact" data-i18n="nav_order">Order</a>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:+972552649363">📞 +972 55-264-9363</a>
+                    <a href="https://chat.whatsapp.com/FOcADFRxWOJLi4wLbsE0I0" target="_blank" rel="noopener">💬
+                        WhatsApp</a>
+                    <span data-i18n="footer_loc">📍 Beit Shemesh, Rama A — Near Yeshiva Lev HaTorah</span>
+                    <span data-i18n="footer_kosher">✡️ All products Kosher certified</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span data-i18n="brand">רכישת פירות מרוכזת</span>. <span data-i18n="footer_rights">All
+                        rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================== FLOATING WHATSAPP BUTTON ======================== -->
+    <a href="https://chat.whatsapp.com/FOcADFRxWOJLi4wLbsE0I0" target="_blank" rel="noopener" class="whatsapp-fab"
+        aria-label="Chat on WhatsApp" id="whatsappFab">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        <span class="fab-tooltip" data-i18n="fab_tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
